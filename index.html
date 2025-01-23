@@ -4,15 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tübingen NeuroCalendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      frameborder: 0;
+      scrolling: no;
+    }
+    .calendar-container {
+      overflow-x: auto;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin: 20px;">
+<body>
 
   <h1>Tübingen NeuroCalendar</h1>
-  <p>Welcome! This is an open-acess calendar for all NeuroEvents in Tübingen (TNC Neurocolloquium, Cybernetics Seminar Series, Neurobiology seminar, CIN exchanges, conferences, ...).</p>
+  <p>Welcome! This is an open-access calendar for all NeuroEvents in Tübingen (TNC Neurocolloquium, Cybernetics Seminar Series, Neurobiology seminar, CIN exchanges, conferences, ...).</p>
 
-  <div>
-    <iframe src="https://calendar.google.com/calendar/embed?src=4ac9cf4ad59c30aae2741a510253e64aba11c78907380a67a3efb204c3bc3a82%40group.calendar.google.com&ctz=Europe/Berlin&hl=en" 
-            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <div class="calendar-container">
+    <iframe src="https://calendar.google.com/calendar/embed?src=4ac9cf4ad59c30aae2741a510253e64aba11c78907380a67a3efb204c3bc3a82%40group.calendar.google.com&ctz=Europe/Berlin&hl=en"></iframe>
   </div>
 
   <h2>Request Editing Access</h2>
